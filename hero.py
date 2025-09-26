@@ -1,11 +1,12 @@
-
+from Character import Character 
 # Character ___ Hero
 #        |___ Enemy
 
 # TODO
-# Player Heal
-# USe Items
-# Connect the two files.
+
+#1. Create an Enemy Class that inherits from the Character Class
+#2. Move common functionality between the Hero and Enemy to the Character Class
+#3  Create an Item class and different items inheriting from it.
 
 class Hero ():
 

@@ -1,4 +1,9 @@
 
+class stats ():
+    def __init__(self):
+        print("This is the stats Class")
+
+
 class Character ():
     
     def __init__(self):

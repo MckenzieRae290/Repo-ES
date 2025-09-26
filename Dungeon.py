@@ -1,3 +1,4 @@
+
 # TODO 
 #    1. Assign hero variables for: 
     #  attack moves
@@ -85,6 +86,8 @@ def use_item():
 def damage_player():
     hero_stats["health"] = hero_stats["health"] - 10
     print (f"Your Health is now {hero_stats['health']}")
+
+
     
 
 isPlaying = True
@@ -102,6 +105,9 @@ while (isPlaying):
     elif (action == "attack"):
         #player_attack()
         damage_player() # temporary
+        if (hero_stats["health"] == 0):
+            isPlaying = False 
+            print ("You Died!") 
     elif (action == "use"):
         use_item()
     elif (action == "move"):

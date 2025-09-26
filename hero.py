@@ -4,11 +4,11 @@ from Character import Character
 
 # TODO
 
-#1. Create an Enemy Class that inherits from the Character Class
+#1. Create an Enemy Class that inherits from the Character Class 
 #2. Move common functionality between the Hero and Enemy to the Character Class
 #3  Create an Item class and different items inheriting from it.
 
-class Hero ():
+class Hero (Character):
 
     def __init__(self):
         self.max_health = 100.0

@@ -1,16 +1,4 @@
-
-# TODO 
-#    1. Assign hero variables for: 
-    #  attack moves
-    #  & their damage values,
-    #  inventory.​
-#    2. Track monsters & their health: goblin:30, dragon: 200 etc.​
-#    3. Display hero & monster stats at the start.​
-#    
-#    4. Allow for inputs & functions for:​
-        #    Attacking​
-        #    Using an item​
-#    5. Create a graphical grid representation of the world, with the player's position indicated, add a MOVE input to move the player's position on the grid.​
+from hero import Hero
 
 
 hero_stats = {
@@ -88,7 +76,6 @@ def damage_player():
     print (f"Your Health is now {hero_stats['health']}")
 
 
-    
 
 isPlaying = True
 
@@ -102,9 +89,8 @@ while (isPlaying):
 
     if (action == "flee"):
         isPlaying = quit() #<-- isPlaying = False
-    elif (action == "attack"):
-        #player_attack()
-        damage_player() # temporary
+    elif (action == "attack"):#player_attack()
+        damage_player()
         if (hero_stats["health"] == 0):
             isPlaying = False 
             print ("You Died!") 

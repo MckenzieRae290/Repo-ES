@@ -1,6 +1,4 @@
 from Character import Character 
-# Character ___ Hero
-#        |___ Enemy
 
 # TODO
 
@@ -12,7 +10,6 @@ class Hero (Character):
 
     def __init__(self):
         self.max_health = 100.0
-        #TODO Move health_potion_strength to a different class
         self.health_potion_strength = 5
         
         self.stats = {
@@ -68,14 +65,14 @@ def main():
     print("This is where our program/game starts")
     #------------------------------------------------
     Hero = Hero() # <--- __init__(self)
-    hero.print_stats()
+    Hero.print_stats()
     print("\n--------------------------------\n")
-    hero.set_name("Mckenzie")
+    Hero.set_name("Mckenzie")
     print("\n--------------------------------\n")
-    hero.stats["health"] = 70
-    hero.heal("health potion")
+    Hero.stats["health"] = 70
+    Hero.heal("health potion")
     print("\n--------------------------------\n")
-    print(f"{hero.max_health}")
+    print(f"{Hero.max_health}")
     #print(f"Here are your Hero Stats {player.stats}")
 
 if __name__ == '__main__':

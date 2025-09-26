@@ -11,4 +11,4 @@ class Character ():
         print("This is the Character Class")
 
     def retreat (self):
-        print("The hero is reatreating!")
+        print("The hero is reatreating!") 

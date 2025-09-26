@@ -14,12 +14,13 @@
 
 hero_stats = {
     "name" : "hero", # key : value (name -> key) : (hero -> value)
-    "strength" : 7,
+    "strength" : 10,
     "health" : 100.0,
 }
+
 hero_max_health = 100.0
 
-health_potion_strength = 5
+health_potion_strength = 25
 hero_inventory = ["sword","health potion", "rope"] 
 
 def quit ():

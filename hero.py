@@ -16,7 +16,7 @@ class Hero ():
         
         self.stats = {
             "name" : "hero",
-            "strength": 7,
+            "strength": 10,
             "health": 100.0,
         }
 
@@ -63,16 +63,21 @@ class Hero ():
         pass
 
 
-#-------------------------------------------------
-hero = Hero() # <--- __init__(self)
-hero.print_stats()
-print("\n--------------------------------\n")
-hero.set_name("Mckenzie")
-print("\n--------------------------------\n")
-hero.stats["health"] = 70
-hero.heal("health potion")
-print("\n--------------------------------\n")
+def main():
+    print("This is where our program/game starts")
+    #------------------------------------------------
+    Hero = Hero() # <--- __init__(self)
+    hero.print_stats()
+    print("\n--------------------------------\n")
+    hero.set_name("Mckenzie")
+    print("\n--------------------------------\n")
+    hero.stats["health"] = 70
+    hero.heal("health potion")
+    print("\n--------------------------------\n")
+    print(f"{hero.max_health}")
+    #print(f"Here are your Hero Stats {player.stats}")
 
-#print(f"Here are your Hero Stats {player.stats}")
+if __name__ == '__main__':
+    main()
 
 

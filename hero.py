@@ -67,7 +67,7 @@ class Hero ():
 hero = Hero() # <--- __init__(self)
 hero.print_stats()
 print("\n--------------------------------\n")
-hero.set_name("Omar")
+hero.set_name("Mckenzie")
 print("\n--------------------------------\n")
 hero.stats["health"] = 70
 hero.heal("health potion")
